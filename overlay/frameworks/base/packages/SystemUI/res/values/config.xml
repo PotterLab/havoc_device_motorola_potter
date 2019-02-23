@@ -35,4 +35,7 @@
     <!-- Max visible notification icons -->
     <integer name="config_maxVisibleNotificationIcons">7</integer>
     <integer name="config_maxVisibleNotificationIconsWhenDark">8</integer>
+
+    <!-- System icon area layout weight -->
+    <item name="system_icon_area_weight" format="float" type="integer">1.25</item>
 </resources>
