@@ -523,6 +523,7 @@
          autodetected from the Configuration. -->
     <bool name="config_showNavigationBar">true</bool>
 
-    <!-- Whether the device has hw keys -->
-    <bool name="config_canShowNavbarToggle">true</bool>
+    <!-- Whether device can force navbar disabling -->
+    <bool name="config_canForceDisableNavigationBar">true</bool>
 </resources>
+	
