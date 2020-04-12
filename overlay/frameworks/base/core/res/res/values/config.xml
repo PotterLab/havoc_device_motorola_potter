@@ -538,5 +538,7 @@
        For example, a device with Back, Home and AppSwitch keys would set this
        config to 19. -->
     <integer name="config_deviceHardwareKeys">1</integer>
+
+    <!-- Whether device ignores the RSSNR signal implementation -->
+    <bool name="config_ignoreRssnrSignalLevel">true</bool>
 </resources>
-	
