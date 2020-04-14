@@ -29,9 +29,9 @@ INITIAL_COPYRIGHT_YEAR=2017
 MY_DIR="${BASH_SOURCE%/*}"
 if [[ ! -d "$MY_DIR" ]]; then MY_DIR="$PWD"; fi
 
-ARROW_ROOT="$MY_DIR"/../../..
+HAVOC_ROOT="$MY_DIR"/../../..
 
-HELPER="$ARROW_ROOT"/vendor/arrow/build/tools/extract_utils.sh
+HELPER="$HAVOC_ROOT"/vendor/havoc/build/tools/extract_utils.sh
 if [ ! -f "$HELPER" ]; then
     echo "Unable to find helper script at $HELPER"
     exit 1
@@ -39,7 +39,7 @@ fi
 . "$HELPER"
 
 # Initialize the helper for device
-setup_vendor "$DEVICE" "$VENDOR" "$ARROW_ROOT" true
+setup_vendor "$DEVICE" "$VENDOR" "$HAVOC_ROOT" true
 
 # Copyright headers and guards
 write_headers "potter"
@@ -53,7 +53,7 @@ write_footers
 if [ -s "$MY_DIR"/../$DEVICE/proprietary-files.txt ]; then
     # Reinitialize the helper for device
     INITIAL_COPYRIGHT_YEAR="$DEVICE_BRINGUP_YEAR"
-    setup_vendor "$DEVICE" "$VENDOR" "$ARROW_ROOT" false
+    setup_vendor "$DEVICE" "$VENDOR" "$HAVOC_ROOT" false
 
     # Copyright headers and guards
     write_headers

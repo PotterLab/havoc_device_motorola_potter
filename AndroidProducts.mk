@@ -15,9 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/arrow_potter.mk
+    $(LOCAL_DIR)/havoc_potter.mk
 
 COMMON_LUNCH_CHOICES := \
-    arrow_potter-user \
-    arrow_potter-userdebug \
-    arrow_potter-eng
+    havoc_potter-user \
+    havoc_potter-userdebug \
+    havoc_potter-eng
